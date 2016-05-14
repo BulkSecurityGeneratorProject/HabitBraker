@@ -1,0 +1,15 @@
+version: '2'
+services:
+    habitbraker-app:
+        image: habitbraker
+        external_links:
+            - habitbraker-mysql:mysql
+        environment:
+            - SPRING_PROFILES_ACTIVE=prod
+            - SPRING_DATASOURCE_URL=jdbc:mysql://mysql:3306/habitbraker?useUnicode=true&characterEncoding=utf8&useSSL=false
+        ports:
+            - 8080:8080
+    habitbraker-mysql:
+        extends:
+            file: mysql.yml
+            service: habitbraker-mysql
