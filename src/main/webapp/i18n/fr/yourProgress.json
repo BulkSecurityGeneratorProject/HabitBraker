@@ -1,0 +1,24 @@
+{
+    "habitBrakerApp": {
+        "yourProgress" : {
+            "home": {
+                "title": "YourProgresses",
+                "createLabel": "Créer un nouveau Your Progress",
+                "createOrEditLabel": "Créer ou éditer un Your Progress",
+                "search": "Recherche pour Your Progress"
+            },
+            "created": "Un nouveau Your Progress a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Your Progress avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Your Progress avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Your Progress {{ id }} ?"
+            },
+            "detail": {
+                "title": "Your Progress"
+            },
+            "metGoalToday": "Met Goal Today",
+            "date": "Date",
+            "exerciseRegularly": "Exercise Regularly"
+        }
+    }
+}

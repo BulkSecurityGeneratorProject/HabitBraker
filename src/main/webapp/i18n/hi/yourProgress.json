@@ -1,0 +1,24 @@
+{
+    "habitBrakerApp": {
+        "yourProgress" : {
+            "home": {
+                "title": "YourProgresses",
+                "createLabel": "नया Your Progress बनाएँ",
+                "createOrEditLabel": "Your Progress बनाएँ या संपादित करें",
+                "search": "Your Progress खोजें"
+            },
+            "created": "एक नया Your Progress [identifier: {{ param }}] तैयार है",
+            "updated": "एक Your Progress [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Your Progress [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Your Progress [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Your Progress"
+            },
+            "metGoalToday": "Met Goal Today",
+            "date": "Date",
+            "exerciseRegularly": "Exercise Regularly"
+        }
+    }
+}

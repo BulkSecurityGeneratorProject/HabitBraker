@@ -1,0 +1,32 @@
+{
+    "relationships": [
+        {
+            "relationshipName": "exerciseRegularly",
+            "otherEntityName": "exerciseRegularly",
+            "relationshipType": "many-to-one",
+            "otherEntityField": "committedTo"
+        }
+    ],
+    "fields": [
+         {
+            "fieldName": "date",
+            "fieldType": "LocalDate",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "metGoalToday",
+            "fieldType": "Boolean",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+
+    ],
+    "changelogDate": "20160514185557",
+    "dto": "mapstruct",
+    "service": "serviceImpl",
+    "entityTableName": "your_progress",
+    "pagination": "pager"
+}

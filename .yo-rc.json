@@ -28,6 +28,7 @@
       "en",
       "fr",
       "hi"
-    ]
+    ],
+    "enableSocialSignIn": true
   }
 }

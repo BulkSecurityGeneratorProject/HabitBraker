@@ -36,4 +36,8 @@
     <cache name="org.habitbraker.domain.User.persistentTokens"
            timeToLiveSeconds="3600">
     </cache>
-    </ehcache>
+    
+    <cache name="org.habitbraker.social.SocialUserConnection"
+           timeToLiveSeconds="3600">
+    </cache>
+</ehcache>

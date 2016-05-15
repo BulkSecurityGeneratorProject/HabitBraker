@@ -31,6 +31,8 @@ public class JHipsterProperties {
 
     private final CorsConfiguration cors = new CorsConfiguration();
 
+    private final Social social = new Social();
+
     private final Ribbon ribbon = new Ribbon();
 
     public Async getAsync() {
@@ -63,6 +65,10 @@ public class JHipsterProperties {
 
     public CorsConfiguration getCors() {
         return cors;
+    }
+
+    public Social getSocial() {
+        return social;
     }
 
     public Ribbon getRibbon() {
@@ -501,7 +507,18 @@ public class JHipsterProperties {
         }
 
     }
+    public static class Social {
 
+        private String redirectAfterSignIn = "/#/home";
+
+        public String getRedirectAfterSignIn() {
+            return redirectAfterSignIn;
+        }
+
+        public void setRedirectAfterSignIn(String redirectAfterSignIn) {
+            this.redirectAfterSignIn = redirectAfterSignIn;
+        }
+    }
     public static class Ribbon {
 
         private String[] displayOnActiveProfiles;

@@ -1,0 +1,119 @@
+
+<form name="editForm" role="form" novalidate ng-submit="vm.save()" show-validation>
+
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true"
+                ng-click="vm.clear()">&times;</button>
+        <h4 class="modal-title" id="myExerciseRegularlyLabel" translate="habitBrakerApp.exerciseRegularly.home.createOrEditLabel">Create or edit a Exercise Regularly</h4>
+    </div>
+    <div class="modal-body">
+        <jhi-alert-error></jhi-alert-error>
+        <div class="form-group" ng-show="vm.exerciseRegularly.id">
+            <label for="id" translate="global.field.id">ID</label>
+            <input type="text" class="form-control" id="id" name="id"
+                    ng-model="vm.exerciseRegularly.id" readonly />
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="habitBrakerApp.exerciseRegularly.pledgedAmmount" for="field_pledgedAmmount">Pledged Ammount</label>
+            <input type="number" class="form-control" name="pledgedAmmount" id="field_pledgedAmmount"
+                    ng-model="vm.exerciseRegularly.pledgedAmmount"
+                    required />
+            <div ng-show="editForm.pledgedAmmount.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.pledgedAmmount.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.pledgedAmmount.$error.number" translate="entity.validation.number">
+                    This field should be a number.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="habitBrakerApp.exerciseRegularly.pledgedCharity" for="field_pledgedCharity">Pledged Charity</label>
+            <select class="form-control" name="pledgedCharity" ng-model="vm.exerciseRegularly.pledgedCharity" id="field_pledgedCharity" required>
+                <option value="CureKids" translate="habitBrakerApp.Charities.CureKids">CureKids</option>
+                <option value="SPCA" translate="habitBrakerApp.Charities.SPCA">SPCA</option>
+                <option value="Starship" translate="habitBrakerApp.Charities.Starship">Starship</option>
+            </select>
+            <div ng-show="editForm.pledgedCharity.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.pledgedCharity.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>
+         <div class="form-group">
+            <label class="control-label" translate="habitBrakerApp.exerciseRegularly.committedTo" for="field_committedTo">Committed To</label>
+            <input type="text" class="form-control" name="committedTo" id="field_committedTo"
+                    ng-model="vm.exerciseRegularly.committedTo"
+                    required />
+            <div ng-show="editForm.committedTo.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.committedTo.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+            </div>
+        </div>       
+        <div class="form-group">
+            <label class="control-label" translate="habitBrakerApp.exerciseRegularly.startDate" for="field_startDate">Start Date</label>
+                <div class="input-group">
+                    <input id="field_startDate" type="text" class="form-control" name="startDate" datetime-picker="{{dateformat}}" ng-model="vm.exerciseRegularly.startDate" is-open="vm.datePickerOpenStatus.startDate"
+                    required  />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('startDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.startDate.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.startDate.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.startDate.$error.ZonedDateTimelocal" translate="entity.validation.ZonedDateTimelocal">
+                    This field should be a date and time.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="habitBrakerApp.exerciseRegularly.endDate" for="field_endDate">End Date</label>
+                <div class="input-group">
+                    <input id="field_endDate" type="text" class="form-control" name="endDate" datetime-picker="{{dateformat}}" ng-model="vm.exerciseRegularly.endDate" is-open="vm.datePickerOpenStatus.endDate"
+                    required  />
+                    <span class="input-group-btn">
+                        <button type="button" class="btn btn-default" ng-click="vm.openCalendar('endDate')"><i class="glyphicon glyphicon-calendar"></i></button>
+                    </span>
+                </div>
+            <div ng-show="editForm.endDate.$invalid">
+                <p class="help-block"
+                    ng-show="editForm.endDate.$error.required" translate="entity.validation.required">
+                    This field is required.
+                </p>
+                <p class="help-block"
+                    ng-show="editForm.endDate.$error.ZonedDateTimelocal" translate="entity.validation.ZonedDateTimelocal">
+                    This field should be a date and time.
+                </p>
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label" translate="habitBrakerApp.exerciseRegularly.notes" for="field_notes">Notes</label>
+            <input type="text" class="form-control" name="notes" id="field_notes"
+                    ng-model="vm.exerciseRegularly.notes"
+                     />
+        </div>
+        <div class="form-group">
+            <label translate="habitBrakerApp.exerciseRegularly.user" for="field_user">User</label>
+            <select class="form-control" id="field_user" name="user" ng-model="vm.exerciseRegularly.userId" ng-options="user.id as user.login for user in vm.users"            >
+                <option value=""></option>
+            </select>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" ng-click="vm.clear()">
+            <span class="glyphicon glyphicon-ban-circle"></span>&nbsp;<span translate="entity.action.cancel">Cancel</span>
+        </button>
+        <button type="submit" ng-disabled="editForm.$invalid || isSaving" class="btn btn-primary">
+            <span class="glyphicon glyphicon-save"></span>&nbsp;<span translate="entity.action.save">Save</span>
+        </button>
+    </div>
+</form>

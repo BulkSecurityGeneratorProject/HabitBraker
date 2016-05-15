@@ -1,0 +1,28 @@
+{
+    "habitBrakerApp": {
+        "exerciseRegularly" : {
+            "home": {
+                "title": "Exercise Goal",
+                "createLabel": "Create Exercise Goal",
+                "createOrEditLabel": "Create or Edit Exercise Goal",
+                "search": "Search for Exercise Regularly"
+            },
+            "created": "A new exercise goal has been created with identifier {{ param }}",
+            "updated": "An exercise goal is updated with identifier {{ param }}",
+            "deleted": "An exercise Regularly is deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete exercise goal {{ id }}?"
+            },
+            "detail": {
+                "title": "Exercise Goal"
+            },
+            "committedTo": "Committed To",
+            "pledgedAmmount": "Pledged Amount",
+            "pledgedCharity": "Pledged Charity",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "notes": "Notes",
+            "user": "User"
+        }
+    }
+}

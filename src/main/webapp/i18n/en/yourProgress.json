@@ -1,0 +1,24 @@
+{
+    "habitBrakerApp": {
+        "yourProgress" : {
+            "home": {
+                "title": "Goal Progress",
+                "createLabel": "Report Progress",
+                "createOrEditLabel": "Report or update progress",
+                "search": "Search for Progress report"
+            },
+            "created": "Progress report created with identifier {{ param }}",
+            "updated": "Progress report updated with identifier {{ param }}",
+            "deleted": "Progress report deleted with identifier {{ param }}",
+            "delete": {
+                "question": "Are you sure you want to delete a Progress report {{ id }}?"
+            },
+            "detail": {
+                "title": "Progress Report"
+            },
+            "metGoalToday": "Met Goal Today",
+            "date": "Date",
+            "exerciseRegularly": "Exercise Regularly"
+        }
+    }
+}

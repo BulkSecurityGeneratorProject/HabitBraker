@@ -1,0 +1,42 @@
+
+<div>
+    <h2><span translate="habitBrakerApp.exerciseRegularly.detail.title">Exercise Regularly</span> {{vm.exerciseRegularly.id}}</h2>
+    <hr>
+    <jhi-alert-error></jhi-alert-error>
+    <dl class="dl-horizontal jh-entity-details">
+        <dt><span translate="habitBrakerApp.exerciseRegularly.committedTo">Committed To</span></dt>
+        <dd>
+            <span>{{vm.exerciseRegularly.committedTo}}</span>
+        </dd>
+        <dt><span translate="habitBrakerApp.exerciseRegularly.pledgedAmmount">Pledged Ammount</span></dt>
+        <dd>
+            <span>{{vm.exerciseRegularly.pledgedAmmount}}</span>
+        </dd>
+        <dt><span translate="habitBrakerApp.exerciseRegularly.pledgedCharity">Pledged Charity</span></dt>
+        <dd>
+            <span translate="{{'habitBrakerApp.Charities.' + vm.exerciseRegularly.pledgedCharity}}">{{vm.exerciseRegularly.pledgedCharity}}</span>
+        </dd>
+        <dt><span translate="habitBrakerApp.exerciseRegularly.startDate">Start Date</span></dt>
+        <dd>
+            <span>{{vm.exerciseRegularly.startDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="habitBrakerApp.exerciseRegularly.endDate">End Date</span></dt>
+        <dd>
+            <span>{{vm.exerciseRegularly.endDate | date:'medium'}}</span>
+        </dd>
+        <dt><span translate="habitBrakerApp.exerciseRegularly.notes">Notes</span></dt>
+        <dd>
+            <span>{{vm.exerciseRegularly.notes}}</span>
+        </dd>
+        <dt><span translate="habitBrakerApp.exerciseRegularly.user">User</span></dt>
+        <dd>
+            {{vm.exerciseRegularly.userLogin}}
+        </dd>
+    </dl>
+
+    <button type="submit"
+            onclick="window.history.back()"
+            class="btn btn-info">
+        <span class="glyphicon glyphicon-arrow-left"></span>&nbsp;<span translate="entity.action.back"> Back</span>
+    </button>
+</div>

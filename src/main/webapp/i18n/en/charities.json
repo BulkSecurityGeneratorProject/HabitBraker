@@ -1,0 +1,10 @@
+{
+    "habitBrakerApp": {
+        "Charities" : {
+            "null": "",
+            "CureKids": "Cure Kids",
+            "SPCA": "SPCA",
+            "Starship": "Starship"
+        }
+    }
+}

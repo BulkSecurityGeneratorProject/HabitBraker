@@ -1,0 +1,28 @@
+{
+    "habitBrakerApp": {
+        "exerciseRegularly" : {
+            "home": {
+                "title": "ExerciseRegularlies",
+                "createLabel": "नया Exercise Regularly बनाएँ",
+                "createOrEditLabel": "Exercise Regularly बनाएँ या संपादित करें",
+                "search": "Exercise Regularly खोजें"
+            },
+            "created": "एक नया Exercise Regularly [identifier: {{ param }}] तैयार है",
+            "updated": "एक Exercise Regularly [identifier: {{ param }}] का अद्यतन हुआ है",
+            "deleted": "Exercise Regularly [identifier: {{ param }}] हटा दिया है",
+            "delete": {
+                "question": "Exercise Regularly [id: {{ id }}] हटाने की पुष्टि करें"
+            },
+            "detail": {
+                "title": "Exercise Regularly"
+            },
+            "committedTo": "Committed To",
+            "pledgedAmmount": "Pledged Ammount",
+            "pledgedCharity": "Pledged Charity",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "notes": "Notes",
+            "user": "User"
+        }
+    }
+}

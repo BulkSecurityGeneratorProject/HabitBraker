@@ -1,0 +1,28 @@
+{
+    "habitBrakerApp": {
+        "exerciseRegularly" : {
+            "home": {
+                "title": "ExerciseRegularlies",
+                "createLabel": "Créer un nouveau Exercise Regularly",
+                "createOrEditLabel": "Créer ou éditer un Exercise Regularly",
+                "search": "Recherche pour Exercise Regularly"
+            },
+            "created": "Un nouveau Exercise Regularly a été créé avec l'identifiant {{ param }}",
+            "updated": "Le Exercise Regularly avec l'identifiant {{ param }} a été mis à jour",
+            "deleted": "Le Exercise Regularly avec l'identifiant {{ param }} a été supprimé",
+            "delete": {
+                "question": "Etes-vous certain de vouloir supprimer le Exercise Regularly {{ id }} ?"
+            },
+            "detail": {
+                "title": "Exercise Regularly"
+            },
+            "committedTo": "Committed To",
+            "pledgedAmmount": "Pledged Ammount",
+            "pledgedCharity": "Pledged Charity",
+            "startDate": "Start Date",
+            "endDate": "End Date",
+            "notes": "Notes",
+            "user": "User"
+        }
+    }
+}
